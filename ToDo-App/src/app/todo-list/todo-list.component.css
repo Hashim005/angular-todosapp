@@ -1,0 +1,194 @@
+/* Add these styles to your component CSS file */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: #0056b3;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.sub-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-height: 70vh; /* Adjust height as necessary */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+.todo-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 20px); /* Flex properties to ensure cards are properly aligned */
+  box-sizing: border-box;
+}
+
+.task-details {
+  margin-bottom: 10px;
+}
+
+.task-details h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #343a40;
+}
+
+.task-details p {
+  margin: 5px 0;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.actions button:hover {
+  background-color: #e2e6ea;
+}
+
+.actions button:active {
+  background-color: #dae0e5;
+}
+
+.current-date {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-align: right;
+}
+
+/* New CSS for completed tasks */
+.completed-task h3, .completed-task p {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+.dueDate{
+  color: red;;
+}
+.priority-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: white;
+  border: 2px solid #007bff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.priority-task {
+  margin-bottom: 10px;
+}
+
+.priority-task h3 {
+  margin: 0;
+}
+
+.priority-popup button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.priority-popup button:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown button */
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  height: 10px;
+}
+
+/* Dropdown content */
+.actions {
+  position: relative;
+  display: inline-block;
+}
+.actions button{
+  height: auto;
+  width: auto;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background: #f0f0f0;
+}
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 130px;
+}

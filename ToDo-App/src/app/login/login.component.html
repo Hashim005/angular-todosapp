@@ -1,0 +1,14 @@
+<div class="login-container">
+  <h2 class="header">Login</h2>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="loginUser.email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="loginUser.password" name="password" required>
+  </div>
+  <button (click)="onLogin()" class="btn btn-login">Login</button>
+  <button routerLink="/register" class="btn btn-register">Register</button>
+</div>

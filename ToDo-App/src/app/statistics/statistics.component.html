@@ -1,0 +1,28 @@
+<div class="statistics">
+  <h2>Task Statistics</h2>
+  <div class="chart-container">
+    <div class="chart">
+      <div class="circle" [style.background]="circleBackgroundStyle">
+        <div class="task-info">
+          <div class="total-tasks"></div>
+          <div class="completed-tasks">{{ completeTask }}</div>
+          <div class="pending-tasks">{{ pendingTask }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="labels">
+      <div class="label">
+        <div class="color-box total">{{ totalTask }}</div>
+        <span>Total Tasks</span>
+      </div>
+      <div class="label">
+        <div class="color-box completed">{{ completeTask }}</div>
+        <span>Completed Tasks</span>
+      </div>
+      <div class="label">
+        <div class="color-box pending">{{ pendingTask }}</div>
+        <span>Pending Tasks</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,188 @@
+{
+  "todoTask": [
+    {
+      "task": "leravel tutorials",
+      "dueDate": "07/24/2024",
+      "completed": true,
+      "id": 4,
+      "showDropdown": true
+    },
+    {
+      "task": "today works",
+      "dueDate": "2024-07-31",
+      "completed": false,
+      "id": 11,
+      "showDropdown": true
+    },
+    {
+      "task": "Interials dEsign work",
+      "dueDate": "2024-08-01",
+      "completed": true,
+      "id": 12,
+      "showDropdown": true
+    },
+    {
+      "task": "Mean Stack Learning",
+      "dueDate": "2024-08-03",
+      "completed": false,
+      "id": 14,
+      "showDropdown": true
+    },
+    {
+      "task": "entry learning Tutorals",
+      "dueDate": "2024-09-05",
+      "completed": false,
+      "id": 16,
+      "showDropdown": true
+    },
+    {
+      "task": "Interials dEsign work",
+      "dueDate": "2024-08-01T00:00:00.000Z",
+      "completed": false,
+      "id": 17,
+      "showDropdown": true
+    },
+    {
+      "task": "join A Party",
+      "dueDate": "2024-08-07",
+      "completed": false,
+      "id": 22
+    },
+    {
+      "task": "Purchasing",
+      "dueDate": "2024-08-06",
+      "completed": false,
+      "id": 23
+    },
+    {
+      "task": "PHP Learning Started",
+      "dueDate": "2024-08-11",
+      "completed": false,
+      "id": 24
+    },
+    {
+      "task": "React Tutorials",
+      "dueDate": "2024-08-09",
+      "completed": false,
+      "id": 25
+    },
+    {
+      "task": "entry learning Tutorals",
+      "dueDate": "2024-09-05",
+      "completed": false,
+      "showDropdown": true,
+      "showDropDown": false,
+      "id": 26
+    },
+    {
+      "task": "java Tutorials",
+      "dueDate": "2024-08-05",
+      "completed": false,
+      "id": 27
+    },
+    {
+      "task": "today task is set",
+      "dueDate": "2024-09-20",
+      "completed": false,
+      "id": 28
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "hashim",
+      "email": "hashim@gmail.com",
+      "password": "12345"
+    },
+    {
+      "username": "jack",
+      "email": "jack@gmai.com",
+      "password": "321",
+      "id": 2
+    },
+    {
+      "username": "john",
+      "email": "johnsamual@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "username": "kiran",
+      "email": "kir@gmail.com",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "username": "wizard",
+      "email": "wiza@gmail.com",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "username": "lalymon",
+      "email": "laly@gmail.com",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "username": "ajaz",
+      "email": "ajaz@gmail.com",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "username": "jack",
+      "email": "jack@gmail.com",
+      "password": "123",
+      "id": 8
+    },
+    {
+      "username": "stalin",
+      "email": "stalin@gmail.com",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "username": "sougandh",
+      "email": "sough@gmail.com",
+      "password": "321",
+      "id": 11
+    },
+    {
+      "username": "kallies",
+      "email": "kali@gmail.com",
+      "password": "123",
+      "id": 12
+    },
+    {
+      "username": "Daniel",
+      "email": "danial@gmail.com",
+      "password": "123",
+      "id": 13
+    },
+    {
+      "username": "dancy",
+      "email": "dancy@gmail.com",
+      "password": "123",
+      "id": 14
+    },
+    {
+      "username": "jancy",
+      "email": "hashimmuhammed2001@gmail.com",
+      "password": "123",
+      "id": 15
+    },
+    {
+      "username": "serban",
+      "email": "serban@gmail.com",
+      "password": "123",
+      "id": 16
+    },
+    {
+      "username": "Tyson",
+      "email": "tyson@gmail.com",
+      "password": "12345",
+      "id": 17
+    }
+  ]
+}

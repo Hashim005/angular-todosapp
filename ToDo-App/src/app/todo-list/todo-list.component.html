@@ -1,0 +1,51 @@
+<div class="main-container">
+  <h1>ToDo List</h1>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" (click)="filterTasks('all', $event)">All</a></li>
+      <li><a href="#" (click)="filterTasks('pending', $event)">Pending</a></li>
+      <li><a href="#" (click)="filterTasks('completed', $event)">Completed</a></li>
+    </ul>
+  </nav>
+
+  <div class="priority-popup" *ngIf="todayPriorityTask.length > 0 ">
+    <h2>Today's Priority Tasks </h2>
+    <div class="priority-task" *ngFor="let task of todayPriorityTask">
+      <h3> {{ task.task }} </h3>
+      <p>Due Date : {{ task.dueDate | date:'MMM d, y' }} </p>
+    </div>
+    <button (click)="closePriorityTask()">Close</button>
+  </div>
+
+  <div class="sub-container">
+    <div class="header">
+      <label for="filter">Filter By:</label>
+      <select name="filter" id="filter" (change)="onFilterChange($event)">
+        <option value="all">All</option>
+        <option value="today">Today</option>
+        <option value="week">Week</option>
+        <option value="month">Month</option>
+      </select>
+
+    </div>
+    <div class="todo-card" *ngFor="let toDo of filteredToDos; let id = index">
+      <div class="task-details" [ngClass]="{'completed-task': toDo.completed}">
+        <h3>{{ toDo.task }}</h3>
+        <p>Current Date: {{ currentDate | date:'MMM d, y'  }} </p>
+        <p>Due Date: {{ toDo.dueDate | date:'MMM d, y' }}</p>
+        <p>Status: {{ toDo.completed ? 'Completed' : 'Pending' }}</p>
+      </div>
+      <div class="actions">
+        <button class="dropdown-btn" (click)="toggleDropdown(toDo)">⋮</button>
+        <div *ngIf="toDo.showDropdown" class="dropdown-menu">
+          <button (click)="markAsCompleted(toDo)">Mark as Completed</button>
+          <button (click)="deleteToDoItem(toDo.id)">Delete</button>
+          <button (click)="editToDoItem(toDo.id)">Edit</button>
+          <button (click)="cloneTodoItem(toDo)">Clone</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

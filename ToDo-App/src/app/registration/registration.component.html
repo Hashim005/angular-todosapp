@@ -1,0 +1,24 @@
+<div class="register-container">
+  <h2 class="register">Create Account</h2>
+
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username"  [(ngModel)]="RegisterUser.username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="RegisterUser.email"  name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="RegisterUser.password" name="password" required>
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword"  name="confirmPassword" required>
+    </div>
+    <button (click)="onRegister()" class="btn btn-register">Register</button>
+    <button routerLink="/login" class="btn btn-back">Back to Login</button>
+
+</div>
+
